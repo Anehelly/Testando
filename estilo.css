@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/*root não estava funcionando antes pq não tinha o ; no @import*/
+:root{
+    --fonte-destaque: "Montserrat", sans-serif;
+    --fonte-ofertas: "Dancing Script", cursive;
+    --varcor01:#D2D7D9;
+    --varcor02:#D9A404;
+    --varcor03:#F28705;
+    --varcor04:#D9A171;
+    --varcor05:#A66953;
+    --varheader:#411111;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--varcor01);
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 320px;
+    max-width: 100%;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 20px;
+    min-height: 150px; /*Ficar uma altura minima para ser exibido em vários dispositivos*/
+    
+    
+}
+
+header > h1{
+    font-family: var(--fonte-destaque);
+    font-size: 119px;/*Aumentar o tamanho da fonte*/
+    font-weight:300;/*Deixar a fonte mais fina*/
+    color: #F25B47;
+    background-color:chartreuse;
+    margin:-10px;
+    padding: 10px;
+    
+
+}
+
+header > p{
+    font-family: var(--fonte-destaque);
+    font-weight: 50px;
+    color: #F25B47;
+    font-weight: bolder;
+    background-color: #411111;
+    margin: -10px;
+    margin-bottom: -20px;
+    padding: 15px;
+}
+
+h2{
+    font-family: var(--fonte-ofertas);
+    text-align: center;
+}
+
+#data{
+    font-weight: lighter;
+}
+
+nav{
+    background-color: var(--varheader);
+    margin: -10px;
+    padding: 10px;
+}
+
+nav > a{
+    color: white;
+    padding: 8px;
+    padding-top: 20px;
+    text-decoration: none;    
+}
+
+a:hover{
+    background-color: #a6695374;
+    border-radius: 3px ;
+    
+}
+
+
+
+main{
+    background-color: white;
+    min-width: 300px; /*largura mín*/
+    max-width: 900px;/*largura max*/
+    margin: auto; /*margem automática, vai centralizar o main*/
+    margin-top: 10px;
+    margin-bottom: 30px;/*margem inferior*/
+    border-bottom-left-radius: 10px;/*borda inferior esquerdo*/
+    border-bottom-right-radius: 10px;/*borda inferior direito*/
+    padding: 20px;/*preenchimento, espaço entre a borda e a box*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.422);/*sombra para os lados> para cima e para baixo > espalhamento > cor */
+}
+
+
+
+footer{
+    background-color: var(--varheader);
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.8em;/*Diminuiu um pouco a fonte*/
+    padding: 5px;/*espaço entre as margens*/
+
+}
+
+.container{
+    position: relative;
+    width: 200px;
+    margin: 45px;
+    display: inline-block;
+    vertical-align: top;
+    vertical-align: top; /* Alinha as imagens pela parte superior */
+ }  
+ .imagem{
+    display: block;
+    width: 100%;
+    height: auto;
+    height: auto;
+ }
+ .legenda{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+ }
+
+
+
+

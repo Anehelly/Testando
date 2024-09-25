@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*Versão mobile*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    height: 100vh;
+}
+
+header > h1{
+    font-size: 35px;
+}
+
+header > p{
+    font-size: 13px;
+}
+
+nav > a{
+    font-size: 13px;
+}
